@@ -1,0 +1,234 @@
+@import "vars.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.w7{
+    font-weight: 700;
+}
+
+@mixin column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin cd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin cdself($p:relative, $t:50%, $l:50%){
+    position: $p;
+    top: $t;
+    left: $l;
+    transform: translate(-50%, -50%);
+}
+
+
+.left{
+    text-align: left;
+  h1,h3,p{
+      text-align: left;
+  }         
+}
+
+.col{@include column;}
+
+button{
+    border: none;
+    border-radius: 6px;
+    background: $green;
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+
+    &:hover{
+        filter: brightness(85%);
+     }
+}
+
+body{
+    background: $l_red;
+}
+
+a.nav-link{
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+.block1{
+    padding: 4% 16%;
+    background: white;
+    @include column;
+
+    h1{color: #333333;font-size: 30px;}
+    p{color: #979797;font-size: 12px;}
+    .square{
+        width: 110px;
+        height: 110px; 
+        background-color: #333333;
+        color: white; 
+        @include column;
+        margin: 10% auto; 
+    }
+
+    &:hover{
+        background: $green;
+        p,h1{color: white;}
+        .square{
+            background-color: white;
+            color: #333333; 
+            }
+     }
+     cursor: pointer;
+}
+
+.block2{
+    padding: 6%;
+    border: 5px solid white;
+    background: $gray;
+    color: white;
+    margin: 2% 0; 
+    box-sizing: border-box;
+
+    p.bottom{
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        bottom: 0px; 
+        background: black;
+        margin-bottom: 0;
+    }
+
+    &:hover{
+        border-color: $green;
+
+        p.bottom{
+            background: white;
+            color: #333333;
+            font-weight: 600;
+        }
+     }
+}
+
+@keyframes border {
+    0% {border-color: $l_gray;}
+    100%   {border-color: white;}
+  }
+
+.px10{
+    font-size: 10px;
+    a{font-size: 10px;}
+}
+
+
+
+
+
+.first{
+    color: white;
+background: $d_red;
+.col-sm{
+    padding: 4%;
+    img{
+        width: 250px;height: 250px; 
+        border: 20px solid $l_gray;
+        border-radius: 50%;
+
+        &:hover{
+            animation: border .8s linear infinite alternate;
+         }
+    }
+  }
+}
+
+
+.second{
+    .main{
+        margin: 8% 0; 
+    }
+}
+
+.third{
+    background-color: #303030;
+    color: white;
+    a{
+        color: $green;
+    }
+    .row{
+        padding: 2% 0;
+        .col-md-3{
+            h3{
+                font-size: 15px;
+                margin-bottom: 10%;
+            }
+            a,p{font-size: 12px;}p{color: #979797;}
+
+            li{
+                list-style: none;
+                border: none;
+                border-bottom: 1.2px solid $l_gray;
+                margin: 2% 0; 
+                padding: 4%;
+                a{
+                    font-size: 14px;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: none;
+                 }
+                }
+            }
+
+            input{
+                background-color: #222222;
+                border: 1px solid $l_gray;
+                padding: 3%;
+                margin: 4% 0;
+                border-radius: 6px; 
+                outline: none;
+                color: white;
+            }
+
+            .bottom{
+                @include column;
+                height: 80%;
+            }
+            button{
+                margin-top: 4%;
+            }
+        }
+
+    }
+}
+
+footer{
+    background-color: #2b2b2b;
+    color: white;
+    line-height: 60px;
+    height: 60px; 
+    color: #979797;
+    font-size: 13px;
+    a{
+        color: $green;
+    }
+}
+
+
+
+//Media
+
+@media (max-width: 575.98px) {
+    .second_1{
+        .col-sm-6{
+            margin: 2% 0; 
+        }
+    }
+}

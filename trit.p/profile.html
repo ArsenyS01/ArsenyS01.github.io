@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' crossorigin='anonymous'>
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.0.13/css/all.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href=" css/main.css"> -->
+    <link rel="stylesheet" href="css/dist/main.css">
+</head>
+<body>
+    
+ <!-- nav -->
+ <div class="container-fluid nav_c">
+  <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" href="#"><img alt="" src="css/img/logo.png"> ScetchBox3D</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="target">
+        <div class="nav-wrapper">
+        <ul class="navbar-nav nav-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">3D модели</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">галерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">блог</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-right ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">избранное</a>
+          </li>
+          <li class="nav-item dropdown-item">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Профиль
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Мой профиль</a>
+                <a class="dropdown-item" href="#">Редактировать</a>
+                <a class="dropdown-item" href="#">Помощь</a>
+                <a class="dropdown-item" href="#">Выход</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">выход</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+
+      
+    </nav>
+</div>
+
+
+
+<div class="page page-profile">
+
+
+<div class="first container">
+<!-- row -->
+<div class="row f_row">
+
+
+<div class="block1 col-md-3">
+
+    <div class="photo">
+        <img alt="" src="css/img/profile/Avatar.png" class="avatar">
+        <p class="line"><img alt="" src="css/img/profile/Admin.png"><span class="status">Администратор</span></p>
+    </div>
+
+    <div class="info md-left">
+        <h6 class="bb">Обо мне</h6>
+
+            <p><span>ФИО:</span> Jeremy Rose</p>
+            <p><span>Регистрация:</span> 07.12.2020</p>
+            <p><span>Пол:</span> Мужской</p>
+            <p><span>Родился:</span> 10.10.1990</p>
+            <p><span>Email:</span> jeremy@gmail.com</p>
+
+            <br>
+
+            <h6 class="bb">Навыки</h6>
+
+            <p>3ds max</p>
+            <p>Photoshop</p>
+            <p>etc</p>
+
+    </div>
+
+</div>
+
+<div class="block2 col-md-9">
+
+<div class="row">
+
+    <div class="inic col-md-8 left">
+    <span class="line"><h2 class="w7 mr-4">Jeremy Rose</h2> <a href="#" class="w7 gray"><img alt="" src="css/img/profile/GPS.png" alt=""> Kazakhstan / Nur-Sultan</a></span>
+    <p class="blue">3D vizualizator</p>
+    <p class="gray">Рейтинг</p>
+    <p><span class="raiting">8,6</span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+  </p>
+<div class="colY">
+    <button><img alt="" src="css/img/profile/message_icon.png"> Написать</button> <br>
+    <a href="#" class="clk">Оставить отзыв</a>
+</div>
+    </div>
+
+    <div class="board col-md-4">
+        <h4 class="w7">Награды Jeremy Rose</h4>
+        <p><img alt="" src="css/img/profile/Nagrada50models.png"> 1-е место в конкурсе за лучшую 3D модель
+            в тематике «Авто»</p>
+        <p><img alt="" src="css/img/profile/Nagrada50models.png"> Награда за 100+ загруженных 3D моделей</p>
+    </div>
+
+</div>
+<!--     
+<div class="categories left">
+    <span class="active">Витрина</span>
+    <span>3D модели </span>
+    <span>Галерея </span>
+    <span>Отзывы (12)</span>
+</div> -->
+
+
+  <!-- Вкладки: -->
+<div class="wrapper left">
+  <div class="tabs left">
+      <span class="tab active">Витрина</span>
+      <span class="tab">3D модели</span>
+      <span class="tab">Галерея</span> 
+      <span class="tab">Отзывы (12)</span>       
+  </div>
+  <!-- <div class="tab_content">
+      <div class="tab_item">Содержимое 1</div>
+      <div class="tab_item">Содержимое 2</div>
+      <div class="tab_item">Содержимое 3</div>
+      <div class="tab_item">Содержимое 4</div>
+  </div> -->
+</div>
+
+
+<div class="gallery">
+    <h3 class="w7 left header">Галерея...</h3>
+    <div class="row">
+        <div class="col-md-3 box col-sm-6 col-xs-6">
+          <div class="card">
+            <a href="#" class="a-card-img-top"><img alt="" src="css/img/profile/bg.jpg" class="card-img-top"></a>
+            <div class="card-body">
+            <p><img alt="" src="css/img/profile/Admin.png"><span>name</span></p>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-3 box col-sm-6 col-xs-6">
+          <div class="card">
+            <a href="#" class="a-card-img-top"><img alt="" src="css/img/profile/bg.jpg" class="card-img-top"></a>
+            <div class="card-body">
+            <p><img alt="" src="css/img/profile/Admin.png"><span>name</span></p>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-3 box col-sm-6 col-xs-6">
+          <div class="card">
+            <a href="#" class="a-card-img-top"><img alt="" src="css/img/profile/bg.jpg" class="card-img-top"></a>
+            <div class="card-body">
+            <p><img alt="" src="css/img/profile/Admin.png"><span>name</span></p>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-3 box col-sm-6 col-xs-6">
+          <div class="card">
+            <a href="#" class="a-card-img-top"><img alt="" src="css/img/profile/bg.jpg" class="card-img-top"></a>
+            <div class="card-body">
+            <p><img alt="" src="css/img/profile/Admin.png"><span>name</span></p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+<!-- row's end -->
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<footer>
+    <a href="#">Lorem, ipsum.</a>
+    <a href="#">Nam, repellat?</a>
+    <a href="#">Aliquam, delectus?</a>
+    <a href="#">Repudiandae, aspernatur.</a>
+    <a href="#">Hic, magnam!</a>
+  </footer>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx' crossorigin='anonymous'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+    <script>
+//       $(".tab_item").not(":first").hide();
+// $(".wrapper .tab").click(function() {
+// 	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+// 	$(".tab_item").hide().eq($(this).index()).fadeIn()
+// }).eq(0).addClass("active");
+$(".wrapper .tab").click(function() {
+$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+}).eq(0).addClass("active");
+    </script>
+    
+</body>
+</html>
