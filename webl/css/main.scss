@@ -370,40 +370,42 @@ small{
         margin-left: -15px;
     }
     
-.doc {
-    position: relative;
-    padding: 20px 37px 31px;
-    background: white;
-    // margin-bottom: 40%;
-    border-radius: 10px;
-    @include column;
-    .df{
-        margin-top: -2px;
-        margin-bottom: 20px;
-    }
-    .items{
-        height: 380px; 
-        overflow: scroll;
-        margin-bottom: 60px;
-        @include column;
-    } 
-}
-
-.soc{
-    position: absolute;
-    bottom: 0;
-    margin-top: 16px !important;
-    width: 100% !important; 
-    .col-3{
-        .inner{
-        width: 65px;
-        height: 65px;
-        border-radius: 10px;
+    .doc {
+        position: relative;
+        padding: 20px 37px 31px;
         background: white;
+        // margin-bottom: 40%;
+        border-radius: 10px;
         @include column;
+        .df{
+            margin-top: -2px;
+            margin-bottom: 20px;
+        }
+        .items{
+            height: 380px; 
+            overflow: scroll;
+            margin-bottom: 60px;
+            @include column;
+        } 
+    }
+
+    .soc{
+        position: absolute;
+        bottom: 0;
+        margin-top: 16px !important;
+        width: 100% !important; 
+        .col-3{
+            @include column;
+            padding: 0;
+            .inner{
+            width: 65px;
+            height: 65px;
+            border-radius: 10px;
+            background: white;
+            @include column;
+            }
         }
     }
-}
 
 }
 
@@ -628,6 +630,16 @@ footer{
         img{
             width: 24px;
             height: 24px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 340px){
+    .soc{
+        .col-3 .inner, .col-3 .inner img{
+            width: 32px !important;
+            height: 32px !important;
         }
     }
 }
