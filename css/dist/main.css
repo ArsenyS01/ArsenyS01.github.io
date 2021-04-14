@@ -1,0 +1,137 @@
+.line {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.line .el {
+  border: none;
+  border-radius: 50%;
+  background: white;
+  width: 7px;
+  height: 7px;
+  margin: 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+.line .el.el_active {
+  background: green;
+}
+.line.icons i {
+  color: white;
+  background: #2c3b42;
+  font-size: 17px;
+  padding: 7px;
+  border: none;
+  border-radius: 50%;
+  min-width: 32px;
+  min-height: 32px;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+.line.icons i:hover {
+  background: green;
+}
+
+.w7 {
+  font-weight: 700;
+}
+
+.left {
+  text-align: left;
+}
+.left h1, .left h3, .left h4, .left h5, .left h6, .left p, .left span {
+  text-align: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  transition: 0.25s;
+}
+
+.blue {
+  color: #085390;
+}
+
+.gray {
+  color: #2B343F;
+}
+
+.bg-blue {
+  background: #085390;
+  color: white;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-fluid {
+  padding: 70px;
+}
+
+button {
+  background: white;
+  border: 1px solid #085390;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 14px;
+  color: #085390;
+  font-weight: 600;
+  font-size: 16px;
+}
+button.button-blue {
+  color: white;
+  background: #085390;
+}
+button.transparent {
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+
+header {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+header .container-fluid {
+  padding: 0 !important;
+}
+header .display-flex {
+  display: flex;
+}
+header .display-flex a::after {
+  vertical-align: 0 !important;
+}
+
+h1 {
+  font-size: 84px;
+}
+
+.block1 {
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.block1 .col-4 {
+  border-left: 1px solid #085390;
+}
+
+.block2 .vid {
+  width: 500px;
+  height: 280px;
+}
+
+.block4 {
+  height: 492px;
+}
+.block4 .row {
+  height: 100%;
+}
+.block4 .row .col-6 {
+  position: relative;
+}
