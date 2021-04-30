@@ -139,6 +139,12 @@ button a {
   color: white;
 }
 
+.reviews .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .reviews span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,7 +217,15 @@ h2 {
           justify-content: space-evenly;
 }
 
+.reviews .container .row {
+  margin: auto;
+}
+
 .reviews .container .rev {
+  margin-bottom: 10px;
+}
+
+.reviews .container .rev .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +239,6 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
   -webkit-box-shadow: 3px 3px #008ebd;
           box-shadow: 3px 3px #008ebd;
   padding: 14px 6px;
@@ -246,6 +259,10 @@ h2 {
 
 .services {
   padding: 56px 0;
+}
+
+.services .col-xs-3 {
+  margin-bottom: 10px;
 }
 
 .services .col-xs-3 .inner {
