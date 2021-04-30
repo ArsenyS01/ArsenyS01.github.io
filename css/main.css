@@ -56,8 +56,212 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: "open sans", sans-serif;
+  text-align: center;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+body {
+  padding-top: 56px;
+}
+
+.nav {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  background: white;
+}
+
+.left {
+  text-align: left;
+}
+
+a {
+  color: black;
+}
+
+.container-fluid {
+  border-bottom: 1px solid #000;
+}
+
+.container-fluid {
+  min-height: 400px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.navbar-brand {
+  font-weight: 800;
+}
+
+img.icon {
+  width: 64px;
+  height: 64px;
+  margin: 10px 0;
+}
+
+img.quote {
+  width: 14px;
+  height: 14px;
+}
+
+.phone {
+  color: #008ebd;
+}
+
+.phone * {
+  color: #008ebd;
+}
+
+button {
+  background: #03a1d6;
+  color: white;
+  font-weight: 400;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+button a {
+  color: white;
+}
+
+.reviews span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews span h4 {
+  margin: 0;
+  margin-left: 7px;
+}
+
+h2 {
+  margin-bottom: 48px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.main {
+  min-height: 400px;
+  background: url(../img/wood.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.main .block {
+  margin-left: 7%;
+}
+
+.main .phone {
+  margin: 10px 0 20px;
+  display: inline-block;
+  font-size: 40px;
+}
+
+.about {
+  background: url(../img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.about .block {
+  margin: auto;
+  width: 60%;
+}
+
+.reviews {
+  min-height: 340px;
+}
+
+.reviews .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.reviews .container .rev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 270px;
+  -webkit-box-shadow: 3px 3px #008ebd;
+          box-shadow: 3px 3px #008ebd;
+  padding: 14px 6px;
+}
+
+.reviews .container .rev span {
+  color: #03a1d6;
+}
+
+.reviews .container .rev p {
+  margin: 0;
+}
+
+.blue, .footer {
+  background: #03a1d6;
+  color: white;
+}
+
+.services {
+  padding: 56px 0;
+}
+
+.services .col-xs-3 .inner {
+  padding: 8px;
+  -webkit-box-shadow: 1.2px 1.2px #008ebd;
+          box-shadow: 1.2px 1.2px #008ebd;
+}
+
+.footer {
+  background: url(../img/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0 35px;
+}
+
+.footer a {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
