@@ -22,18 +22,24 @@ body{
 //common
 
 .categories{
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     .category{
+        position: relative;
         margin: 0 15px; 
-        padding: 35px 140px 22px;
+        padding: 35px 100px 22px;
         padding-left: 35px;
         border-radius: 15px;
         // width: 255px;
         // height: 222px;
         background: white;
+        .inner{
+            min-width: 180px;
+            text-align: left;
+        }
     }
 }
 
@@ -73,7 +79,8 @@ body{
             .inner{background: $yellow;}
         }
         .inner{
-            padding: 40px 0;
+            // padding: 40px 0;
+            height: 100%; 
             @include column;
             background: white;
             min-width: 120px;
@@ -108,8 +115,11 @@ body{
 .histories{
     display: flex;
     .hist{
+        margin: 0 20px; 
+        min-width: 310px;
         padding: 20px;
         .inner{
+            min-width: 310px;
             border-radius: 4px;
             display: flex;
             padding: 10px;
@@ -136,6 +146,12 @@ body{
         }
     }
 }
+
+
+
+
+
+
 .row{
     --bs-gutter-x: 0;
 }
@@ -154,6 +170,38 @@ small{
         width: 13px;
         height: 11px;
     }
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.yellow1{
+    position: absolute;
+    top: -12px;
+    right: -18px;
+    z-index: 10;
+    font-size: 7px;
+    border-radius: 14px 14px 14px 0px;
+    padding: 3px;
+    background: $yellow;
+    font-weight: 600;
+
+}
+
+.yellow2{
+    padding: 3px;
+    padding-right: -7px;
+    // background: $yellow;
+    font-weight: 600;
+    background: url(../img/icons/yellow2.png);
+            background-size: cover;
+            background-position: center;
+
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            z-index: 10;
 }
 
 button{
@@ -267,6 +315,10 @@ p{
 .bg-white{
     background: white;
 }
+
+.bg-blue{
+    background: $blue;
+}
 .gray-bg{
     background: $gray_bg;
 }
@@ -287,7 +339,8 @@ p{
 .overflow{
     overflow-x: scroll;
     max-width: 1000vw;
-    width: 100%; padding: 0 30px; 
+    width: 100%; 
+    // padding: 0 30px; 
     &::-webkit-scrollbar {
         width: 10px; border-radius: 4px;
       }
@@ -346,7 +399,7 @@ p{
         .inner{
             position: absolute;
             left: 5%;
-            top: 20%;
+            top: 24%;
             width: 45%; 
         }
     }
@@ -429,10 +482,12 @@ footer{
 
     button{
         padding: 12px 16px;
+        width: 42px;
+        height: 42px;
         img{
             transform: scale(1.5);
         }
-        margin-right: 14px;
+        margin-right: 14px !important;
     }
     p{
         margin: 0; 
@@ -440,10 +495,36 @@ footer{
     }
 }
 
+.btn-secondary {
+    padding: 0;
+    margin: 0; 
+    color: black !important;
+    background-color: white !important;
+    border-color: white !important;
+    box-shadow: none !important;
+}
+
+.city{
+    display: flex; align-items: center;
+    .dropdown{
+        &, button{
+            @include column;
+        }
+    }
+}
+
+.form-check{
+    display: flex;
+    align-items: center;
+    .square{
+        max-width: 350px;
+        max-height: 60px;
+    }
+}
+
 .btn-group{
     border-radius: 60px;
     font-weight: 900;
-    padding: 4px 0;
     h6{
             margin: 0; 
         }
@@ -473,21 +554,23 @@ footer{
 }
 
 .circle{
-    width: 58px;
-    height: 58px;
+    // width: 58px;
+    // height: 58px;
+    width: 79px;
+    height: 100%;
     @include column;
     position: relative;
 
     &.min{
         color: white;
         background: $green;
-        width: 24px;
-        height: 24px;
-        border: 3px solid white;
+        width: 34px;
+        height: 34px;
+        border: 5.4px solid white;
         font-size: 10px; font-weight: 600;
         padding: 3px;
         position: absolute;
-        top: 0; right: 0; transform: translate(20%, -10%);
+        top: -2px; right: -4px; transform: translate(20%, -10%);
     }
 }
 
@@ -498,7 +581,7 @@ footer{
         // border-radius: 0px;
         border: 2px solid #0551B5;
         box-sizing: border-box;
-        border-radius: 30px;
+        border-radius: 60px;
     }
     &>*:not(:last-child) {
         border-top-right-radius: 0;
@@ -507,7 +590,7 @@ footer{
     &>*:not(:first-child) {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        border-left: none;
+        // border-left: none;
     }
 }
 
@@ -517,18 +600,62 @@ footer{
     box-shadow: none !important;
 }
 
-.nav, .navbar{
-    padding: 30px 0 !important;
+.nav2, .nav1{
     display: flex; 
     justify-content: space-between;
 
+    .right{
+        & > *{
+            position: relative;
+        }
+    }
+
     .circle{
         margin: 0 6px; 
+    }
+    #logo{
+        width: 130px;
+        height: 64px;  
     }
 }
 
 .input-group{
     height: 100%; 
+
+    input{
+        padding-left: 26px;
+    }
+}
+
+.form-check-input:focus {
+   box-shadow: none !important;
+}
+
+.form-check-input:checked {
+    background-color: $blue;
+    border-color: $blue;
+    box-shadow: none !important;
+}
+
+.form-switch .form-check-input {
+    padding: 4px;
+}
+
+.all-nav{
+    .nav1{padding: 24px 30px 10px;}
+    .nav2{padding: 30px;}
 }
 
 
+
+
+
+@media screen and (min-width:1400px) {
+    .first{
+        .content{
+            h1{
+                font-size: 48px;
+            }
+        }
+    }
+}

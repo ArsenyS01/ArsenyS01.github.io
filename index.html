@@ -12,30 +12,51 @@
     <link rel="stylesheet" href="css/dist/main.css">
 </head>
 <body>
-<!-- 
-  <div class="navbar">
+
+<div class="all-nav">
+
+  <div class="nav1">
     <div class="lr w-100">
       <div class="left">
-        <div class="city">город</div>
+        <div class="city line">
+          <span class="gray">Ваш город</span>
+          
+          <h6>Екатеринбург</h6>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" type="button">Москва</button></li>
+              <li><button class="dropdown-item" type="button">Питер</button></li>
+            </ul>
+          </div>
+
+        </div>
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-          <label class="form-check-label" for="flexSwitchCheckChecked">CHECK</label>
+          <!-- <label class="form-check-label" for="flexSwitchCheckChecked">CHECK</label> -->
+
+          <div class="square">
+            Показывать товары и услуги только в моем городе
+          </div>
         </div>
       </div>
       
       <div class="right">
-        <span class="blue">Lorem.</span>
-        <span>Doloremque.</span>
-        <span>Tempora!</span>
-        <span>Totam.</span>
-        <span>Est?</span>
+        <div><span class="blue">Lorem.</span></div>
+        <div><span>Aliquam!</span></div>
+        <div><span>Animi!</span></div>
+        <div><span>Rerum?</span><div class="yellow1">Новое</div></div>
+        <div><span>Architecto!</span></div>
       </div>
     </div>
-  </div> -->
+  </div>
 
-  <!-- <div class="nav main">
+  <hr>
+
+  <div class="nav2 main">
     
-    <img src="css/img/logo.png" alt="">
+    <img src="css/img/logo.png" alt="" id="logo">
 
 
     <div class="btn-group">
@@ -45,14 +66,14 @@
 
     <div>
       <div class="input-group">
-        <input type="text">
+        <input type="text" placeholder="Поиск">
         <select id="inputGroupSelect02">
-          <option selected>Choose...</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+          <option selected>категория</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
         </select>
-        <label class="input-group-text" for="inputGroupSelect02">Options</label>
+        <label class="bg-blue p-4"><img src="css/img/icons/search.png" alt=""></label>
       </div>
     </div>
 
@@ -81,8 +102,9 @@
       </div>
     </div>
 
-  </div> -->
+  </div>
 
+</div>
 
 <div class="container-fluid first">
 
@@ -123,6 +145,7 @@
 
   <div class="categories overflow">
     <div class="category">
+      <div class="yellow2">-25%</div>
       <div class="inner">
         <img src="css/img/slider (rename/LAP/auto 1.png" alt="">
         <h4>Авто</h4>
@@ -698,6 +721,48 @@
         </div>
       </div>
     </div>
+    <div class="hist">
+      <div class="inner">
+        <div class="body">
+          <h4>Как не выбрать поддельный телефон </h4>
+          <p>Краткое описание истории, ограниченое по кол-ву знаков ...</p>
+          <small class="white">ООО Смартфоны</small>
+          <div class="bottom">
+            <small>Телефон</small>
+            <small>Купить</small>
+            <small>Недорого</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hist">
+      <div class="inner">
+        <div class="body">
+          <h4>Как не выбрать поддельный телефон </h4>
+          <p>Краткое описание истории, ограниченое по кол-ву знаков ...</p>
+          <small class="white">ООО Смартфоны</small>
+          <div class="bottom">
+            <small>Телефон</small>
+            <small>Купить</small>
+            <small>Недорого</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hist">
+      <div class="inner">
+        <div class="body">
+          <h4>Как не выбрать поддельный телефон </h4>
+          <p>Краткое описание истории, ограниченое по кол-ву знаков ...</p>
+          <small class="white">ООО Смартфоны</small>
+          <div class="bottom">
+            <small>Телефон</small>
+            <small>Купить</small>
+            <small>Недорого</small>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <button class="btn-blue">Все истории <img src="css/img/icons/white-arrow.png" alt=""></button>
@@ -708,7 +773,7 @@
 
   <div class="top">
     <div class="lr">
-      <div class="left"><img src="css/img/white-logo.png" alt=""></div>
+      <div class="left"><img src="css/img/white-logo.png" alt=""><img src="css/img/text-logo.png" alt="" class="invert"></div>
       <div class="right">
         <img src="css/img/icons/mail.png" alt="" id="mail">
         <input type="text" placeholder="Подпишитесь на рассылку">

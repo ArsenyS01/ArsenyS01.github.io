@@ -54,3 +54,7 @@
 .up {
   text-transform: uppercase;
 }
+
+.invert {
+  filter: invert(1);
+}
