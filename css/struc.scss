@@ -76,10 +76,17 @@
     justify-content: center !important;
 }
 
+.rotate{
+    transform: rotate(180deg);
+}
 
+.circle{
+    border-radius: 50%;
+}
 
-
-
+.up{
+    text-transform: uppercase;
+}
 
 
 

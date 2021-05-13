@@ -1,0 +1,60 @@
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.line .el {
+  border: none;
+  border-radius: 50%;
+  background: white;
+  width: 7px;
+  height: 7px;
+  margin: 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.line .el.el_active {
+  background: green;
+}
+
+.line.icons i {
+  color: white;
+  background: #2c3b42;
+  font-size: 17px;
+  padding: 7px;
+  border: none;
+  border-radius: 50%;
+  min-width: 32px;
+  min-height: 32px;
+  margin-left: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.line.icons i:hover {
+  background: green;
+}
+
+.w7 {
+  font-weight: 700;
+}
+
+.left {
+  text-align: left;
+}
+
+.left h1, .left h3, .left h4, .left h5, .left h6, .left p, .left span {
+  text-align: left;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=struc.css.map */
